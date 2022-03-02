@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --income: #16a34a;
+  --expense: #dc2626;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: auto;
+}
+.app{
+  width: 100%;
+  margin: auto;
+}
+
+.app h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.balance-container #balance {
+  font-size: 1.5em;
+}
+
+.cashflow-container {
+  display: flex;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.income-container {
+  border-right: 1px solid #cccccc;
+  padding-right: 20px;
+}
+
+.expense-container {
+  padding-left: 20px;
+}
+
+#income,
+#expense {
+  font-size: 1.3em;
+}
+
+#income {
+  color: var(--income);
+}
+
+#expense {
+  color: var(--expense);
+}
+
+.transaction-container {
+  margin-top: 40px;
+}
+
+#transaction {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#transaction li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  box-shadow: var(--box-shadow);
+  border-radius:10px ;
+}
+
+#transaction li span {
+  display: inline-block;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+#transaction li .income-amt {
+  background-color: #bbf7d0;
+  color: var(--income);
+}
+
+#transaction li .expense-amt {
+  background-color: #fecaca;
+  color: var(--expense);
+}
+
+#transaction li button {
+  padding: 5px 10px 5px 10px;
+}
+
+.form-container {
+  margin-top: 40px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form label {
+  padding-bottom: 10px;
+}
+
+.form-container form input {
+  height: 25px;
+  margin-bottom: 10px;
+  border: rgb(245, 245, 245) 2px solid;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.form-container form input:focus{
+  outline: none;
+  border: rgb(180, 180, 180) 2px solid;
+}
+
+.form-container form button {
+font-size: small;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 8px;
+}
+
+#incomeBtn {
+  background-color: #bbf7d0;
+  color: var(--income);
+}
+#incomeBtn:hover{
+  background-color: #80faab;
+}
+
+#expenseBtn {
+  background-color: #fecaca;
+  color: var(--expense);
+}
+#expenseBtn:hover{
+  background-color: #f89f9f;
+}
+.removeBtn{
+  border: none;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.removeBtn:hover{
+  background: rgb(212, 212, 212);
+}
+.btn-container{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
